@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/fragment_user_contact_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/contact_with_us"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+
+        />
+
+
+    <EditText
+        android:id="@+id/fragment_user_contact_txt_name"
+        android:layout_width="400dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/circle_gray"
+        android:hint="@string/name"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+
+    <EditText
+        android:id="@+id/fragment_user_contact_txt_email"
+        android:layout_width="400dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp"
+        android:background="@drawable/circle_gray"
+        android:hint="@string/email"
+
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/fragment_user_contact_txt_phone"
+        android:layout_width="400dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/circle_gray"
+        android:hint="@string/phone"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/fragment_user_contact_us_et_description"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/circle_gray"
+        android:hint="@string/quick_description"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="start"
+        android:paddingTop="10dp"/>
+
+
+    <Button
+        android:id="@+id/fragment_user_contact_us_btn_send"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_grident"
+        android:text="@string/send"
+        android:textColor="@color/white"
+
+        />
+
+    <RadioGroup
+        android:id="@+id/fragment_contact_us_rg_message_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_user_contact_us_et_description"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/fragment_contact_us_rb_complain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/complain" />
+
+        <RadioButton
+            android:id="@+id/fragment_contact_us_rb_suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="10dp"
+            android:text="@string/suggestion" />
+
+        <RadioButton
+            android:id="@+id/fragment_contact_us_rb_enquiry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/enquiry" />
+    </RadioGroup>
+
+</RelativeLayout>

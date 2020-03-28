@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+
+    <RelativeLayout
+        android:id="@+id/item_recycler_shops_relateve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="5dp">
+
+
+        <RelativeLayout
+            android:layout_width="280dp"
+            android:layout_height="170dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/circle_gray">
+
+            <TextView
+                android:id="@+id/item_recycler_shops_txt_shop_name"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:textSize="@dimen/_17sdp"
+                android:textColor="@color/black"/>
+
+            <RatingBar
+                android:id="@+id/item_recycler_shops_rating_bar"
+
+                style="?attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/item_recycler_shops_txt_shop_name"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:isIndicator="true"
+                android:numStars="5"/>
+
+            <ImageView
+                android:id="@+id/item_recycler_shops_shap_o_c"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_below="@id/item_recycler_shops_txt_shop_name"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/item_recycler_shops_rating_bar"
+                android:background="@drawable/circle" />
+
+            <TextView
+                android:id="@+id/item_recycler_shops_txt_o_c"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/item_recycler_shops_txt_shop_name"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/item_recycler_shops_shap_o_c"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/item_recycler_shops_txt_minimum_charge"
+                android:layout_width="220dp"
+                android:layout_height="25dp"
+                android:layout_above="@+id/item_recycler_shops_txt_dlevary_fees"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/delevary_fee_"
+                android:textSize="@dimen/_12sdp"
+                android:paddingTop="@dimen/_5sdp"
+
+                />
+
+            <TextView
+                android:id="@+id/item_recycler_shops_txt_dlevary_fees"
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="@string/minimum_charge_"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_5sdp"/>
+
+
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_recycler_shops_img"
+            android:layout_width="140dp"
+            android:layout_height="130dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/circle"
+
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

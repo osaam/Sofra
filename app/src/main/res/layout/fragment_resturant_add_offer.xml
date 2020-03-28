@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+    android:orientation="vertical"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/add_photo_for_offer"
+        android:textColor="@color/sofra_color"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/fragment_restorant_add__offer_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/add_photo"
+        android:textColor="@color/white" />
+
+
+    <EditText
+        android:id="@+id/fragment_restorant_add_meal_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/circle_20"
+        android:hint="@string/name_of_meal"
+        android:paddingStart="10dp"
+        android:textColorHint="@color/gray"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/fragment_restorant_add_meal_description"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/circle_20"
+        android:gravity="start"
+        android:hint="@string/quick_description"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:textColorHint="@color/gray"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="410dp"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/circle_20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fragment_restorant_add_meal_offer_price_txt_from"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:gravity="center_vertical"
+            android:hint="@string/from"
+            android:textColorHint="@color/black"
+            android:textSize="30dp" />
+
+        <ImageView
+android:id="@+id/fragment_restorant_add_meal_offer_price_img_from"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_today_black"
+            android:layout_marginTop="10dp"
+
+          />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/circle_20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fragment_restorant_add_meal_offer_price_txt_to"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/to"
+            android:textColorHint="@color/black"
+            android:textSize="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+android:id="@+id/fragment_restorant_add_meal_offer_price_img_to"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_today_black"
+            android:layout_marginTop="10dp"
+           />
+    </LinearLayout>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/fragment_restorant_add_meal_offer_price"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_below="@id/fragment_restorant_add_meal_description"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/circle_20"
+        android:hint="@string/price"
+        android:paddingStart="10dp"
+        android:textColorHint="@color/gray"
+        android:textSize="20dp"
+
+        />
+    <EditText
+        android:id="@+id/fragment_restorant_add_meal_offer_price_in_offer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_below="@id/fragment_restorant_add_meal_description"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/circle_20"
+        android:hint="@string/price_in_offers"
+        android:paddingStart="10dp"
+        android:textColorHint="@color/gray"
+        android:textSize="20dp"
+
+        />
+
+    <Button
+        android:id="@+id/fragment_restorant_add_btn_confirm"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fragment_restorant_add_meal_offer_price_in_offer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_grident"
+        android:text="@string/confirm"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

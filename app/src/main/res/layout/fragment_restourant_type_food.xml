@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="@string/types"
+    android:textSize="35dp"
+    android:textColor="@color/sofra_color"
+    android:gravity="center_horizontal"
+    />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/item_recycler_restorant_food_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        tools:listitem="@layout/item_recycler_restorant_type_food"/>
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="25dp"/>
+</RelativeLayout>

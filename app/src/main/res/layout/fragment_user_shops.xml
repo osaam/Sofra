@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/fragment_user_shops_relative"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp">
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circle"
+                android:padding="10dp"
+                android:textAllCaps="true"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/fragment_user_shop_spinner"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+               />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/ic_arrow_down_sofra" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp">
+
+            <EditText
+                android:id="@+id/fragment_user_shop_et_search"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circle"
+                android:hint="@string/choose_shop"
+                android:padding="10dp"
+                android:textAllCaps="true"
+                android:textSize="12dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@color/sofra_color"
+                android:paddingEnd="10dp"/>
+
+            <ImageView
+                android:id="@+id/fragment_user_shop_img_search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/ic_search_sofra" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_shopes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_user_shops_relative"
+        tools:listitem="@layout/item_recycler_shops" />
+
+</RelativeLayout>

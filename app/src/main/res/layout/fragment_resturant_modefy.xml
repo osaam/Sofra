@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    >
+
+<ImageView
+        android:id="@+id/fragment_restorant_modefy_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/ic_account_gray"
+        />
+
+    <RelativeLayout
+        android:id="@+id/fragment_restorant_modefy_relative_name"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/circle_gray"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@+id/fragment_restorant_modefy_img"
+
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_account_white"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"/>
+
+        <EditText
+            android:id="@+id/fragment_login_restorant_txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name_of_resturante"
+            android:layout_marginStart="40dp"
+            android:textColorHint="@color/white"
+            android:textSize="20dp"
+            />
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/fragment_login_restorant_txt_name"
+            android:background="@color/white"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="8dp"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/fragment_restorant_modefy_relative_email"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/circle_gray"
+        android:layout_below="@+id/fragment_restorant_modefy_relative_name"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_email_white"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"/>
+
+        <EditText
+            android:id="@+id/fragment_restorant_modefy_et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:layout_marginStart="40dp"
+            android:textColorHint="@color/white"
+            android:textSize="20dp"
+            />
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/fragment_restorant_modefy_et_email"
+            android:background="@color/white"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="8dp"
+            />
+
+    </RelativeLayout>
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/fragment_regester_restorant_relative_time"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/fragment_regester_restorant_relative_email"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginStart="25dp"-->
+<!--        android:layout_marginEnd="25dp"-->
+<!--        >-->
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:background="@drawable/ic_clock_white"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginStart="10dp"/>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/fragment_regester_restorant_et_time"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="@string/delevary_time"-->
+<!--            android:layout_marginStart="40dp"-->
+<!--            android:textColorHint="@color/white"-->
+<!--            android:inputType="number"-->
+<!--            android:textSize="20dp"-->
+<!--            />-->
+<!--        <ImageView-->
+<!--            android:layout_width="320dp"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_alignBottom="@id/fragment_regester_restorant_et_time"-->
+<!--            android:background="@color/white"-->
+<!--            android:layout_marginStart="40dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            />-->
+
+<!--    </RelativeLayout>-->
+    <RelativeLayout
+        android:id="@+id/fragment_restorant_modefy_relative_city"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/circle_gray"
+        android:layout_below="@+id/fragment_restorant_modefy_relative_email"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_home_white"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"/>
+
+        <EditText
+            android:id="@+id/fragment_restorant_modefy_et_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/city"
+            android:layout_marginStart="40dp"
+            android:textColorHint="@color/blackGray"
+            android:textSize="20dp"
+            />
+        <Spinner
+            android:id="@+id/fragment_restorant_modefy_sp_city"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            />
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/fragment_restorant_modefy_et_city"
+            android:background="@color/white"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="8dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_arrow_down_white"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/fragment_restorant_modefy_relative_regon"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/circle_gray"
+        android:layout_below="@+id/fragment_restorant_modefy_relative_city"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_home_white"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"/>
+
+        <EditText
+            android:id="@+id/fragment_restorant_modefy_et_regon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/area"
+            android:layout_marginStart="40dp"
+            android:textColorHint="@color/blackGray"
+            android:textSize="20dp"
+            />
+        <Spinner
+            android:id="@+id/fragment_restorant_modefy_sp_regon"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            />
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/fragment_restorant_modefy_et_regon"
+            android:background="@color/white"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="8dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_arrow_down_white"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            />
+    </RelativeLayout>
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/fragment_regester_restorant_relative_pass"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/fragment_regester_restorant_relative_regon"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginStart="25dp"-->
+<!--            android:layout_marginEnd="25dp"-->
+<!--            >-->
+<!--            <ImageView-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:background="@drawable/ic_lock_white"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginStart="10dp"/>-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/fragment_regester_restorant_et_pass"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="@string/password"-->
+<!--                android:layout_marginStart="40dp"-->
+<!--                android:textColorHint="@color/white"-->
+<!--                android:textSize="20dp"-->
+<!--                />-->
+<!--            <ImageView-->
+<!--                android:layout_width="320dp"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:layout_alignBottom="@id/fragment_regester_restorant_et_pass"-->
+<!--                android:background="@color/white"-->
+<!--                android:layout_marginStart="40dp"-->
+<!--                android:layout_marginBottom="8dp"-->
+<!--                />-->
+
+<!--        </RelativeLayout>-->
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/fragment_regester_restorant_relative_pass_confirm"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/fragment_regester_restorant_relative_pass"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginStart="25dp"-->
+<!--        android:layout_marginEnd="25dp"-->
+<!--        >-->
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:background="@drawable/ic_lock_white"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginStart="10dp"/>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/fragment_regester_restorant_et_pass_confirm"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="@string/password_confirmation"-->
+<!--            android:layout_marginStart="40dp"-->
+<!--            android:textColorHint="@color/white"-->
+<!--            android:textSize="20dp"-->
+<!--            />-->
+<!--        <ImageView-->
+<!--            android:layout_width="320dp"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_alignBottom="@id/fragment_regester_restorant_et_pass_confirm"-->
+<!--            android:background="@color/white"-->
+<!--            android:layout_marginStart="40dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            />-->
+
+<!--    </RelativeLayout>-->
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/fragment_restorant_modefy_relative_mini"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:background="@drawable/circle_gray"-->
+<!--        android:layout_below="@+id/fragment_restorant_modefy_relative_regon"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginStart="25dp"-->
+<!--        android:layout_marginEnd="25dp">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:background="@drawable/ic_money_white"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginStart="10dp" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/fragment_restorant_modefy_et_mini"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="@string/minimum_charge"-->
+<!--            android:layout_marginStart="40dp"-->
+<!--            android:textColorHint="@color/white"-->
+<!--            android:textSize="20dp"-->
+<!--            android:inputType="number"-->
+<!--            />-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="320dp"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_alignBottom="@id/fragment_restorant_modefy_et_mini"-->
+<!--            android:background="@color/white"-->
+<!--            android:layout_marginStart="40dp"-->
+<!--            android:layout_marginBottom="8dp" />-->
+
+<!--    </RelativeLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/fragment_restorant_modefy_relative_delevary"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/circle_gray"
+        android:layout_below="@+id/fragment_restorant_modefy_relative_regon"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_money_white"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp" />
+
+        <EditText
+            android:id="@+id/fragment_restorant_modefy_et_delevary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/delevary_fee"
+            android:layout_marginStart="40dp"
+            android:textColorHint="@color/white"
+            android:textSize="20dp"
+            android:inputType="number"
+            />
+
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/fragment_restorant_modefy_et_delevary"
+            android:background="@color/white"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="8dp" />
+
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/fragment_restorant_modefy_btn_continue"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fragment_restorant_modefy_relative_delevary"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_grident"
+        android:text="@string/continu"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"/>
+
+
+</RelativeLayout>

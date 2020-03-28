@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login_restorant"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_login_res_color"
+
+        />
+
+
+    <TextView
+        android:id="@+id/fragment_reset_pass_txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:hint="@string/please_enter_your_email_here"
+        android:layout_marginStart="40dp"
+        android:textColorHint="@color/white"
+        android:textSize="25dp"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/fragment_reset_pass_relative_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@+id/fragment_reset_pass_txt_email"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_email_white"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            />
+
+        <EditText
+            android:id="@+id/fragment_reset_pass_et_email"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:hint="@string/email"
+            android:layout_marginStart="60dp"
+            android:textColorHint="@color/gray"
+            android:textSize="20dp"
+            android:background="@drawable/circle"
+            android:padding="10dp"
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/fragment_reset_pass_btn_send"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fragment_reset_pass_relative_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/btn_grident"
+        android:text="@string/send"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">otlop</string>
+    //splash
+    <string name="order_food">order food</string>
+    <string name="buy_food">buy food</string>
+
+    <string name="choose_area">choose area</string>
+    <string name="choose_fav_shop">choose your favouriet shop</string>
+    <string name="confirm">confirm</string>
+    <string name="delete">delete</string>
+    <string name="mount">mount  </string>
+    <string name="enter_your_spicial_order_here">enter your spicial order here</string>
+    <string name="spicial_order">spicial order</string>
+
+    //login
+
+    <string name="login">login</string>
+    <string name="email">e-mail</string>
+    <string name="password">password</string>
+    <string name="password_confirmation">password confirmation</string>
+    <string name="are_you_forget_your_password">are you forget your password ?!</string>
+    <string name="continu">continue..</string>
+    <string name="are_you_have_not_account">are you have not account ?!</string>
+    <string name="click_here">click here</string>
+    <string name="name_of_resturante">name of resturante</string>
+    <string name="phone">phone</string>
+    <string name="city">city</string>
+    <string name="area">area</string>
+    <string name="rating">rating</string>
+    <string name="minimum_charge">minimum charge</string>
+    <string name="delevary_fee">delevary fee</string>
+    <string name="coniction_data">coniction data</string>
+    <string name="whatsapp">whats app</string>
+    <string name="photo_of_shop">photos of shop..</string>
+    <string name="send">send</string>
+    <string name="please_enter_your_email_here">please.. enter your email here</string>
+    <string name="enter_the_code_you_are_recive_it_here">enter the code you are recive it here</string>
+    <string name="code">code</string>
+    <string name="please_enter_your_new_password_here">please enter your new password here</string>
+    <string name="order_detaiels">order detaiels</string>
+    <string name="add_detaiels">add detaiels</string>
+    <string name="delevary_address">delevary address</string>
+    <string name="payment_method">payment method</string>
+    <string name="cash">cash</string>
+    <string name="visa">visa</string>
+    <string name="order_price">order price</string>
+    <string name="delevary_price">delevary price :</string>
+    <string name="all">all</string>
+    <string name="name">name</string>
+    <string name="add_review">add review</string>
+    <string name="We_are_glad_to_share_your_evaluation">We are glad to share your evaluation</string>
+    <string name="aveliable">aveliable</string>
+    <string name="offers">offers</string>
+    <string name="log_out">log out</string>
+    <string name="contact_with_us">contact with us</string>
+    <string name="about_app">about app</string>
+    <string name="change_passsword">change password</string>
+    <string name="more">more</string>
+    <string name="offer_detaiels">offer detaiels</string>
+    <string name="Remember_me">Remember me</string>
+    <string name="total">Total :</string>-->
+    <string name="total_price">Total price :</string>-->
+    <string name="types">Types</string>
+    <string name="name_of_type">name of type</string>
+    <string name="delevary_time">delevary time</string>
+    <string name="new_offers">new offers</string>
+    <string name="from">from</string>
+    <string name="to">to</string>
+    <string name="get_it_now">get It now</string>
+    <string name="about_us">ABOUT US</string>
+    <string name="add_your_rate">add your rate</string>
+    <string name="price">price</string>
+        <string name="activation">activation</string>
+        <string name="ok">ok</string>
+        <string name="my_offers">my offers</string>
+        <string name="name_of_meal">name of meal</string>
+        <string name="quick_description">quick description</string>
+        <string name="price_in_offers">price in offers</string>
+        <string name="add_photo_for_meal">add photo for meal</string>
+        <string name="modefy">modefy</string>
+    <string name="add_photo_for_offer">add photo for offer</string>
+        <string name="add_new_offer">add new offer</string>
+    <!--    <string name=""></string>-->
+    <!--    <string name=""></string>-->
+    <!--    <string name=""></string>-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="please_wait">pleas wait</string>
+    <string name="oldpassword">old password</string>
+    <string name="new_password">new password</string>
+    <string name="call">call</string>
+    <string name="accept">accept</string>
+    <string name="cancle">cancle</string>
+    <string name="about_app_dialog">هناك حقيقة مثبتة منذ زمن طويل وهى ان المحتوى المقروء لصفحة ما سيلهى القارئ عن التركيز على شكل تواضع الفقرات فى الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم ابيسوم لأنها تعطى توزيعا طبيعيا-الى- حد ما للاحرف عوضا عن الاستخدام هنا يوجد محتوى نصي</string>
+    <string name="complain">complain</string>
+    <string name="suggestion">suggestion</string>
+    <string name="enquiry">enquiry</string>
+    <string name="add_you_rate">add_you_rate</string>
+    <string name="add_you_rate2">add your rate</string>
+    <string name="log_out_txt">are you sure you want log out ..?! </string>
+    <string name="no">no</string>
+    <string name="yes">yes</string>
+    <string name="comment_and_review">comment and review</string>
+    <string name="reason_of_reject">reason of reject</string>
+    <string name="add_your_food_type">add your food type</string>
+    <string name="update_your_food_type">update your food type</string>
+    <string name="delevary_fee_">delevary fee :</string>
+    <string name="minimum_charge_">minimum charge :</string>
+    <string name="special_order">special order</string>
+    <string name="restaurant_commission">Please transfer 10% of total profit in maximum time one month</string>
+    <string name="choose_shop">Choose Shope</string>
+
+</resources>

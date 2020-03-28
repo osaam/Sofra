@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/fragment_user_order_detaiels2_txt_order"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/order_detaiels"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/fragment_user_order_detaiels2_relative_logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/fragment_user_order_detaiels2_txt_order"
+        android:layout_margin="10dp"
+        android:background="@drawable/circle_gray">
+
+        <ImageView
+            android:id="@+id/fragment_user_order_detaiels2_img_logo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/fragment_user_order_detaiels2_txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/fragment_user_order_detaiels2_img_logo" />
+
+        <TextView
+            android:id="@+id/fragment_user_order_detaiels2_txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/fragment_user_order_detaiels2_img_logo" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fragment_user_order_detaiels2_txt_address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/fragment_user_order_detaiels2_relative_logo"
+        android:layout_margin="10dp"
+        android:background="@drawable/circle_gray"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_user_order_detaiels2_relative_reset"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/fragment_user_order_detaiels2_txt_address"
+        android:layout_margin="10dp"
+        android:background="@drawable/circle_gray">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="@string/order_detaiels"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            tools:listitem="@layout/item_recycler_order_detaiels" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_user_order_detaiels2_relative_final"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@id/fragment_user_order_detaiels2_relative_reset"
+        android:layout_margin="10dp"
+        android:background="@drawable/circle_gray">
+
+        <TextView
+            android:id="@+id/fragment_user_order_detaiels2_txt_price_food"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:paddingStart="10dp"
+            android:text="@string/order_price"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/fragment_user_order_detaiels2_txt_delevary"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/fragment_user_order_detaiels2_txt_price_food"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:paddingStart="10dp"
+            android:text="@string/delevary_price"
+
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/fragment_user_order_detaiels2_txt_all_price"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/fragment_user_order_detaiels2_txt_delevary"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:paddingStart="10dp"
+            android:text="@string/all"
+            android:textColor="@color/black"
+
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/fragment_user_order_detaiels2_txt_pay"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/fragment_user_order_detaiels2_txt_all_price"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:paddingStart="10dp"
+            android:text="@string/payment_method"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/fragment_user_order_detaiels2_btn_call"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/buttom_call"
+        android:layout_below="@id/fragment_user_order_detaiels2_relative_final"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+
+        />
+    <Button
+        android:id="@+id/fragment_user_order_detaiels2_btn_confirm"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/true_icon"
+        android:layout_below="@id/fragment_user_order_detaiels2_relative_final"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/fragment_user_order_detaiels2_btn_remove"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/buttom_remove"
+        android:layout_below="@id/fragment_user_order_detaiels2_relative_final"
+        android:layout_toEndOf="@id/fragment_user_order_detaiels2_btn_confirm"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <!--        <Button-->
+    <!--            android:id="@+id/fragment_user_order_detaiels_btn_confirm"-->
+    <!--            android:layout_width="250dp"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:layout_below="@+id/fragment_user_order_detaiels_relative_total"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:layout_marginTop="20dp"-->
+    <!--            android:background="@drawable/circle"-->
+    <!--            android:backgroundTint="@color/sofra_color"-->
+    <!--            android:text="@string/confirm"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="20sp" />-->
+
+
+</RelativeLayout>

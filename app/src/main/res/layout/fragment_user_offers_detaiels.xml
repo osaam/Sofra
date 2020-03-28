@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/fragment_user_offers_detaiels"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/offer_detaiels"
+        android:textColor="@color/sofra_color"
+        android:textSize="50dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/circle_20">
+
+        <TextView
+            android:id="@+id/fragment_user_offer_detaiels_titel"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="40dp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:id="@+id/fragment_user_offer_detaiels_description"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="65dp"
+            android:text="@string/area"
+            android:textSize="20dp" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="130dp">
+
+            <TextView
+                android:id="@+id/fragment_user_offer_detaiels_from"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+
+                android:gravity="start"
+                android:text="@string/from"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/fragment_user_offer_detaiels_from_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="220dp"
+                android:layout_toEndOf="@+id/fragment_user_offer_detaiels_from"
+                android:textSize="25dp" />
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="170dp">
+
+                <TextView
+                    android:id="@+id/fragment_user_offer_detaiels_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+
+                    android:gravity="start"
+                    android:text="@string/to"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/fragment_user_offer_detaiels_to_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="220dp"
+                    android:layout_toEndOf="@+id/fragment_user_offer_detaiels_to"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/fragment_user_offer_detaiels_btn"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_grident"
+                android:text="@string/get_it_now"
+                android:textSize="25dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/item_recycler_shops_shortcuts"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        tools:listitem="@layout/item_recycler_shops_shortcuts" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/item_recycler_shops_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/item_recycler_shops_shortcuts"
+        tools:listitem="@layout/item_recycler_shops_item" />
+</RelativeLayout>

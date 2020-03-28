@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/fragment_user_shop_info_txt_aveliblity"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/aveliable"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/fragment_user_shop_info_txt_aveliblity_res"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_toEndOf="@id/fragment_user_shop_info_txt_aveliblity"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/sofra_color"
+        android:textSize="30dp"
+
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/fragment_user_shop_info_txt_city"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/city"
+        android:textSize="30dp" />
+
+
+    <TextView
+        android:id="@+id/fragment_user_shop_info_txt_city_res"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_toEndOf="@id/fragment_user_shop_info_txt_city"
+        android:layout_marginTop="55dp"
+        android:textColor="@color/sofra_color"
+        android:textSize="30dp"
+
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="100dp" />
+
+    <TextView
+        android:id="@+id/fragment_user_shop_info_txt_area"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/area"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/fragment_user_shop_info_txt_area_res"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_toEndOf="@id/fragment_user_shop_info_txt_area"
+        android:textColor="@color/sofra_color"
+        android:textSize="30dp"
+
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="150dp" />
+
+    <TextView
+        android:id="@+id/fragment_user_shop_info_txt_minimum"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="150dp"
+        android:text="@string/minimum_charge"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/fragment_user_shop_info_txt_minimum_res"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_toEndOf="@id/fragment_user_shop_info_txt_minimum"
+        android:layout_marginTop="150dp"
+        android:textColor="@color/sofra_color"
+        android:textSize="30dp"
+
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="200dp" />
+
+    <TextView
+        android:id="@+id/fragment_user_shop_info_txt_delevary_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:text="@string/delevary_fee"
+        android:textSize="30dp" />
+    android:textSize="30dp" />
+    <TextView
+        android:id="@+id/fragment_user_shop_info_txt_delevary_res"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_toEndOf="@id/fragment_user_shop_info_txt_delevary_fee"
+        android:layout_marginTop="200dp"
+        android:textColor="@color/sofra_color"
+        android:textSize="30dp"
+
+        />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="250dp" />
+</RelativeLayout>

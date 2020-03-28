@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#BD174E</color>
+    <color name="splash_background">#D8D6D6</color>
+    <color name="sofra_color">#C21141</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#DDD8D8</color>
+    <color name="gray2">#F3F1F1</color>
+    <color name="green">#167A18</color>
+    <color name="roze">#F7F2F2</color>
+    <color name="black">#000000</color>
+    <color name="red">#861414</color>
+    <color name="blackGray">#8F8B8B</color>
+    <color name="blue">#1E54EB</color>
+
+</resources>

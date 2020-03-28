@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_recycler_shops_item_order_relateve"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="15dp">
+
+        <ImageView
+            android:id="@+id/item_recycler_shops_item_order_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/circle_20"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/item_recycler_shops_item_order_img"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/circle_20">
+
+            <TextView
+                android:id="@+id/item_recycler_shops_item_order_txt1_title"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/item_recycler_shops_item_order_txt2_detaiels"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/item_recycler_shops_item_order_txt1_title"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/item_recycler_shops_item_order_txt3_price"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/item_recycler_shops_item_order_txt2_detaiels"
+                android:textSize="13dp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/item_recycler_shops_item_order_relateve"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/item_recycler_shops_item_order_relateve"
+        android:layout_marginTop="20dp"
+        android:paddingStart="10dp"
+        android:text="@string/special_order"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/item_recycler_shops_item_order_et_note"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/item_recycler_shops_item_order_relateve"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/circle_20"
+        android:gravity="start"
+        android:hint="@string/enter_your_spicial_order_here"
+        android:padding="15dp"
+        android:textColorHint="@color/blackGray"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/item_recycler_shops_item_order_relateve"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:background="@color/gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/item_recycler_shops_item_order_relateve"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:text="@string/mount"
+        android:textSize="30dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@id/item_order_btn_shopping"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/increase"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@+id/fragment_order_item_txt_number_of_order"
+            android:background="@drawable/circle"
+            android:text="+"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/fragment_order_item_txt_number_of_order"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:textSize="20dp"
+
+
+            />
+
+        <Button
+            android:id="@+id/decreas"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/fragment_order_item_txt_number_of_order"
+            android:background="@drawable/circle"
+            android:text="-"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/item_order_btn_shopping"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shopping_icon" />
+
+
+</RelativeLayout>

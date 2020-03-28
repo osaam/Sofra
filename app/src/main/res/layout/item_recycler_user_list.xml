@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/circle_gray"
+    android:backgroundTint="@color/gray2"
+    android:layout_margin="10dp">
+
+
+    <RelativeLayout
+        android:id="@+id/item_recycler_list_relateve"
+        android:layout_width="280dp"
+        android:layout_height="130dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/item_recycler_shops_txt_shop_name"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+android:textSize="@dimen/_20sdp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/item_recycler_shops_txt_shop_num"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/item_recycler_shops_txt_shop_name"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+
+            />
+
+        <TextView
+            android:id="@+id/item_recycler_shops_txt_total"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/item_recycler_shops_txt_shop_num"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:id="@+id/item_recycler_shops_txt_dlevary_address"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/item_recycler_shops_txt_total"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/item_recycler_shops_img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circle" />
+
+
+    <LinearLayout
+        android:id="@+id/item_recycler_list_btn_linear"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/item_recycler_list_relateve"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_red"
+android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        >
+
+        <TextView
+            android:id="@+id/item_recycler_list_btn_name"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="110dp"
+            android:gravity="center_horizontal"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            />
+
+        <ImageView
+            android:id="@+id/item_recycler_list_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginTop="-20dp"
+   >
+
+    <RelativeLayout
+        android:id="@+id/notify_item_relative"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/circle_gray2"
+        android:layout_margin="15dp"
+        android:backgroundTint="#F8F6F6"
+        >
+        <ImageView
+            android:id="@+id/notify_item_img_icon"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:background="@drawable/ic_notifications_black"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+
+            android:paddingTop="3dp"
+            android:id="@+id/notify_item_txt_alarm"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="32dp"
+            android:layout_centerVertical="true"
+            android:text="Alert about your order"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+            <ImageView
+                android:id="@+id/notify_item_img_clock"
+            android:layout_width="22dp"
+          android:layout_height="22dp"
+        android:background="@drawable/ic_clock_black"
+        android:layout_toLeftOf="@id/notify_item_txt_date"
+        android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/notify_item_txt_date"
+            android:layout_width="142dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="sunday:2/3/2020"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:gravity="center_vertical"
+
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

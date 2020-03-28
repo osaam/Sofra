@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/circle_gray"
+    android:backgroundTint="@color/gray2"
+    android:layout_marginTop="@dimen/_20sdp">
+
+
+    <RelativeLayout
+        android:id="@+id/item_recycler_restourant_list_relateve"
+        android:layout_width="280dp"
+        android:layout_height="130dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="0dp">
+
+        <TextView
+            android:id="@+id/item_recycler_restourant_shops_txt_shop_name"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+android:textSize="@dimen/_20sdp"
+            />
+
+        <TextView
+            android:id="@+id/item_recycler_restouranr_shops_txt_shop_num"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/item_recycler_restourant_shops_txt_shop_name"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+android:textSize="@dimen/_15sdp"
+            />
+
+        <TextView
+            android:id="@+id/item_recycler_restourant_shops_txt_total"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:textSize="@dimen/_150sdp"
+            android:layout_below="@+id/item_recycler_restouranr_shops_txt_shop_num"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:id="@+id/item_recycler_restourant_shops_txt_dlevary_address"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/item_recycler_restourant_shops_txt_total"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/item_recycler_restourant_shops_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circle" />
+
+
+    <LinearLayout
+        android:id="@+id/item_recycler_restourant_list_btn_linear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/item_recycler_restourant_list_relateve"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/linear_call"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/circle_green"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/img_call"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ic_call_white" />
+
+            <TextView
+                android:id="@+id/item_recycler_restourant_list_txt_call"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/call"
+                android:textSize="25dp"
+                android:visibility="visible"
+
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_accepted"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/blue"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/img_accepted"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ic_check_white" />
+
+            <TextView
+                android:id="@+id/item_recycler_restourant_list_txt_accepted"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/accept"
+                android:textColor="@color/white"
+                android:textSize="19dp"
+                android:visibility="visible"
+
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_close"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/red"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/img_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ic_clear_white" />
+
+            <TextView
+                android:id="@+id/item_recycler_restourant_list_txt_close"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/cancle"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:visibility="visible"
+
+
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

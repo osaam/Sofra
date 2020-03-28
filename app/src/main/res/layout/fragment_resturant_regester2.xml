@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login_restorant">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_login_res_color" />
+
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/fragment_regester_restorant_relative_rating"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="25dp"-->
+<!--        android:layout_marginEnd="25dp"-->
+<!--        android:layout_marginTop="30dp">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:background="@drawable/ic_account_white"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginStart="10dp" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/fragment_regester_restorant_sp_rating"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:background="@null" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/fragment_login_restorant_txt_email"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="@string/rating"-->
+<!--            android:layout_marginStart="40dp"-->
+<!--            android:textColorHint="@color/white"-->
+<!--            android:textSize="20dp" />-->
+
+<!--        <View-->
+<!--            android:layout_width="320dp"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_alignBottom="@id/fragment_login_restorant_txt_email"-->
+<!--            android:background="@color/white"-->
+<!--            android:layout_marginStart="40dp"-->
+<!--            android:layout_marginBottom="8dp" />-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/ic_arrow_down_white"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_centerVertical="true" />-->
+
+
+<!--    </RelativeLayout>-->
+
+
+    <TextView
+        android:id="@+id/fragment_regester_restorant_txt_communication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/coniction_data"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_regester_restorant_relative_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_regester_restorant_txt_communication"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_phone_white"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp" />
+
+        <EditText
+            android:id="@+id/fragment_regester_restorant_et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone"
+            android:layout_marginStart="40dp"
+            android:textColorHint="@color/white"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/fragment_regester_restorant_et_phone"
+            android:background="@color/white"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="8dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_regester_restorant_relative_whatsapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_regester_restorant_relative_phone"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_phone_white"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp" />
+
+        <EditText
+            android:id="@+id/fragment_regester_restorant_et_whatsapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/whatsapp"
+            android:layout_marginStart="40dp"
+            android:textColorHint="@color/white"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/fragment_regester_restorant_et_whatsapp"
+            android:background="@color/white"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="8dp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@id/fragment_regester_restorant_txt_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_regester_restorant_relative_whatsapp"
+        android:text="@string/photo_of_shop"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp" />
+
+
+    <ImageView
+        android:id="@+id/fragment_regester_restorant2_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/add_photo"
+        android:layout_marginStart="40dp"
+        android:layout_below="@id/fragment_regester_restorant_txt_photo" />
+
+    <Button
+        android:id="@+id/fragment_regester_restorant_btn_confirm"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fragment_regester_restorant_txt_photo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/btn_grident"
+        android:text="@string/confirm"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

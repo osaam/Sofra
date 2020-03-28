@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="@string/add_photo_for_meal"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/sofra_color"
+        />
+
+<ImageView
+        android:id="@+id/fragment_restorant_modefy_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/add_photo"
+        />
+
+
+
+
+        <EditText
+            android:id="@+id/fragment_restorant_modefy_meal_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/name_of_meal"
+            android:layout_marginStart="40dp"
+            android:textColorHint="@color/gray"
+            android:textSize="20dp"
+            android:layout_marginTop="160dp"
+            android:paddingStart="10dp"
+            android:background="@drawable/circle_20"
+            />
+    <EditText
+        android:id="@+id/fragment_restorant_modefy_meal_description"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/quick_description"
+        android:layout_marginStart="40dp"
+        android:textColorHint="@color/gray"
+        android:textSize="20dp"
+        android:layout_marginTop="240dp"
+        android:paddingStart="10dp"
+        android:background="@drawable/circle_20"
+        android:gravity="start"
+        android:paddingTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/fragment_restorant_modefy_meal_price"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/price"
+        android:layout_marginStart="40dp"
+        android:textColorHint="@color/gray"
+        android:inputType="number"
+
+        android:textSize="20dp"
+        android:layout_marginTop="410dp"
+        android:paddingStart="10dp"
+        android:background="@drawable/circle_20"
+        />
+    <EditText
+        android:id="@+id/fragment_restorant_modefy_meal_price_in_offer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/price_in_offers"
+        android:layout_marginStart="40dp"
+        android:textColorHint="@color/gray"
+        android:textSize="20dp"
+        android:layout_marginTop="490dp"
+        android:paddingStart="10dp"
+        android:inputType="number"
+
+        android:background="@drawable/circle_20"
+        />
+    <EditText
+        android:id="@+id/fragment_restorant_modefy_meal_time"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/delevary_time"
+        android:layout_marginStart="40dp"
+        android:textColorHint="@color/gray"
+        android:textSize="20dp"
+        android:layout_marginTop="570dp"
+        android:paddingStart="10dp"
+        android:inputType="number"
+        android:background="@drawable/circle_20"
+        />
+
+
+
+    <Button
+        android:id="@+id/fragment_restorant_modefy_btn_confirm"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fragment_restorant_modefy_meal_time"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_grident"
+        android:text="@string/modefy"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"/>
+
+
+</RelativeLayout>

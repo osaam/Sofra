@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_220sdp">
+
+    <TextView
+        android:id="@+id/dialo_add_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/add_your_food_type"
+        android:textSize="30sp"
+
+        android:textColor="@color/sofra_color"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/dialo_add_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/dialo_add_txt"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/add_photo"
+        android:layout_marginTop="10dp"
+        android:layout_margin="@dimen/_10sdp"/>
+
+    <EditText
+        android:id="@+id/dialog_add_et"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/dialo_add_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circle_gray2"
+        android:hint="@string/name_of_type"
+        android:paddingStart="10dp"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/dialog_add_btn"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_grident"
+        android:text="ok"
+        android:textSize="30sp" />
+
+</RelativeLayout>

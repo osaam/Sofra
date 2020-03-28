@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/more"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/roze"
+        android:gravity="center"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/fragment_more_relatev_offer"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/roze"
+        android:layout_marginTop="50dp"
+
+        >
+
+        <TextView
+            android:id="@+id/fragment_more_txt_offer"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:paddingTop="15dp"
+            android:text="@string/offers"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_toRightOf="@+id/fragment_more_img_offer"/>
+
+        <ImageView
+            android:id="@+id/fragment_more_img_offer"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_card_gift_black"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            />
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/fragment_more_txt_offer"
+            android:layout_centerHorizontal="true"
+            android:background="@color/sofra_color"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/fragment_more_relatev_contact"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/roze"
+        android:layout_below="@+id/fragment_more_relatev_offer">
+
+        <TextView
+            android:id="@+id/fragment_more_txt_contact"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:paddingTop="15dp"
+            android:text="@string/contact_with_us"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_toRightOf="@+id/fragment_more_img_contact"/>
+
+        <ImageView
+            android:id="@+id/fragment_more_img_contact"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_email_black"
+            />
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/fragment_more_txt_contact"
+            android:layout_centerHorizontal="true"
+            android:background="@color/sofra_color"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/fragment_more_relatev_about"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/roze"
+        android:layout_below="@+id/fragment_more_relatev_contact">
+
+        <TextView
+            android:id="@+id/fragment_more_txt_about"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:paddingTop="15dp"
+            android:text="@string/about_app"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_toRightOf="@+id/fragment_more_img_about"/>
+
+        <ImageView
+            android:id="@+id/fragment_more_img_about"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_light_black"
+            />
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/fragment_more_txt_about"
+            android:layout_centerHorizontal="true"
+            android:background="@color/sofra_color"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/fragment_more_relatev_change_pass"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/roze"
+        android:layout_below="@+id/fragment_more_relatev_about">
+
+        <TextView
+            android:id="@+id/fragment_more_txt_change_pass"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:paddingTop="15dp"
+            android:text="@string/change_passsword"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_toRightOf="@+id/fragment_more_img_change_pass"/>
+
+        <ImageView
+            android:id="@+id/fragment_more_img_change_pass"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_lock_open_black"
+            />
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/fragment_more_txt_change_pass"
+            android:layout_centerHorizontal="true"
+            android:background="@color/sofra_color"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/fragment_more_relatev_log_out"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/roze"
+        android:layout_below="@+id/fragment_more_relatev_change_pass">
+
+        <TextView
+            android:id="@+id/fragment_more_txt_log_out"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:paddingTop="15dp"
+            android:text="@string/log_out"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_toRightOf="@+id/fragment_more_img_log_out"/>
+
+        <ImageView
+            android:id="@+id/fragment_more_img_log_out"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_home_black"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

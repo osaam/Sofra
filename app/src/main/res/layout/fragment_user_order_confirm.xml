@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/fragment_user_order_detaiels_txt_order"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/order_detaiels"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+
+        />
+
+    <EditText
+        android:id="@+id/fragment_user_order_detaiels_et_detaiels"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/fragment_user_order_detaiels_txt_order"
+        android:layout_margin="10dp"
+        android:background="@drawable/circle_gray"
+        android:backgroundTint="@color/gray2"
+        android:hint="@string/add_detaiels"
+        android:paddingStart="20dp"
+       android:gravity="start"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/fragment_user_order_detaiels_et_detaiels"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        android:text="@string/delevary_address"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/fragment_user_order_detaiels_et_address"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_below="@id/fragment_user_order_detaiels_et_detaiels"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="10dp"
+
+        />
+
+    <TextView
+        android:id="@+id/fragment_user_order_detaiels_et_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        android:layout_below="@id/fragment_user_order_detaiels_et_detaiels"
+        android:layout_marginTop="80dp"
+        android:paddingStart="10dp"
+        android:text="@string/payment_method"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+    <RadioGroup
+        android:id="@+id/fragment_complete_order_rg_pay_method"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@id/fragment_user_order_detaiels_et_payment"
+        >
+
+        <RadioButton
+            android:id="@+id/fragment_user_order_detaiels_ck_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="start"
+            android:layout_marginEnd="100dp"
+            android:text="@string/cash" />
+
+        <RadioButton
+            android:id="@+id/fragment_user_order_detaiels_ck_visa"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:text="@string/visa" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/fragment_user_order_detaiels_relative_total"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/fragment_complete_order_rg_pay_method"
+        android:layout_margin="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/circle_gray"
+        android:backgroundTint="@color/gray2">
+
+        <TextView
+            android:id="@+id/fragment_user_order_detaiels_txt_total"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"
+            android:textColor="@color/black"
+
+            android:text="@string/total"/>
+        <TextView
+            android:id="@+id/fragment_user_order_detaiels_et_total_price"
+            android:layout_toEndOf="@+id/fragment_user_order_detaiels_txt_total"
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"
+            android:textColor="@color/sofra_color" />
+
+
+        <TextView
+            android:id="@+id/fragment_user_order_detaiels_txt_delevary"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textSize="20sp"
+            android:layout_below="@id/fragment_user_order_detaiels_txt_total"
+            android:layout_marginTop="5dp"
+            android:paddingStart="20dp"
+            android:textColor="@color/black"
+            android:text="@string/delevary_price"/>
+        <TextView
+            android:id="@+id/fragment_user_order_detaiels_et_del_price"
+            android:layout_toEndOf="@+id/fragment_user_order_detaiels_txt_delevary"
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textSize="20sp"
+            android:layout_marginTop="40dp"
+            android:paddingStart="20dp"
+            android:textColor="@color/sofra_color" />
+        <TextView
+            android:id="@+id/fragment_user_order_detaiels_txt_total_all"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@id/fragment_user_order_detaiels_txt_delevary"
+            android:layout_marginTop="5dp"
+            android:paddingStart="20dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="@string/total_price"/>
+        <TextView
+            android:id="@+id/fragment_user_order_detaiels_et_total_price_total"
+            android:layout_toEndOf="@+id/fragment_user_order_detaiels_txt_total_all"
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textSize="20sp"
+            android:layout_marginTop="75dp"
+            android:paddingStart="20dp"
+            android:textColor="@color/sofra_color" />
+
+    </RelativeLayout>
+        <Button
+            android:id="@+id/fragment_user_order_detaiels_btn_confirm"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/fragment_user_order_detaiels_relative_total"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/sofra_color"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+
+
+</RelativeLayout>
